@@ -27,4 +27,27 @@ const myFunction = function(){
     console.log("hello world");
 }
 
-console.log(typeof heros);
+// console.log(typeof heros);
+
+//+++++++++++++=++++
+
+//stack, heap
+
+// stack m copy milti h or heap m reference of original value. So, if you change a value in stasck the OG will not be disturbed...But in heap it'll
+
+let myYoutubename = "ashvalekh"
+
+let anotherName = myYoutubename
+anotherName = "teri tehrvi"
+console.log(anotherName);
+console.log(myYoutubename);
+
+let userOne = {
+    name : "ashu",
+    upiId : "ashu@ybl"
+}
+
+let userTwo = userOne
+userTwo.name = "arjun"
+console.log(userTwo);
+console.log(userOne);
