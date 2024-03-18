@@ -35,5 +35,23 @@ JSuser.greetingTwo = function(){
     console.log(`hello user, ${this.name}`);
 }
 
-console.log(JSuser.greeting());
-console.log(JSuser.greetingTwo());
+// console.log(JSuser.greeting());
+// console.log(JSuser.greetingTwo());
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// console.log(course.courseInstructor)
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor)
+
+// { this is how a json looks like
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "999"
+// }
