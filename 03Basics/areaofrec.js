@@ -4,11 +4,11 @@
 // const Area = length * width;
 // console.log(`are of rectangle is ${Area}`);
 
-function areaofrectangle(length, width) {
+function areaofrectangle() {
     return (length*width)
 }
 
 let length = 4;
 let width = 5;
-let area = areaofrectangle(length,width)
+let area = areaofrectangle()
 console.log(area);
