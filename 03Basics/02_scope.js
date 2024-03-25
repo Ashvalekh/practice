@@ -44,3 +44,4 @@ const addTwo = function(num){
     return num +2
 }
 console.log(addTwo(5))
+// we did hoisting in here as we saved the fi ction in addTwo we cant do the same thing as we did with addOne we have to console it after the function executes
