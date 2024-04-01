@@ -29,23 +29,23 @@
     addOptiLnaguage("goLang");
 
     //Edit: editing value
-    const secondLang = document.querySelector("li:nth-child(2)")
+    const secondLang = document.querySelector("li:nth-child(2)");
     // console.log(secondLang);
     // secondLang.innerHTML = "Mojo"
-    const newLi = document.createElement('li')
+    const newLi = document.createElement("li");
     // console.log(newLi);
-    newLi.textContent = "Mojo"
+    newLi.textContent = "Mojo";
     // console.log(newLi.textContent);
-    secondLang.replaceWith(newLi)
+    secondLang.replaceWith(newLi);
 
     //edit
 
-    const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = "<li>TypeScript</li>"
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>TypeScript</li>";
 
     //remove
 
-    const lastlang = document.querySelector('li:last-child')
-    lastlang.remove()
+    const lastlang = document.querySelector("li:last-child");
+    lastlang.remove();
   </script>
 </html>
