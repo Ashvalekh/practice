@@ -1,4 +1,4 @@
-# project 1
+# Solution of project 1
 ## MEri progress
 [CLICK HERE](https://stackblitz.com/edit/dom-project-chaiaurcode-whb4oe?file=1-colorChanger%2Fchaiaurcode.js)
 
@@ -31,7 +31,7 @@ buttons.forEach(function (button) {
 });
 
 ```
-## Project 2
+## Solution of Project 2
 
 ```javascript
 const form = document.querySelector('form');
@@ -59,5 +59,18 @@ form.addEventListener('submit', function (e) {
 
   }
 });
+
+```
+## Solution of Project 3
+```javascript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  const date = new Date();
+  // console.log(date.toLocaleTimeString())
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+
 
 ```
