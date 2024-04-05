@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai or javascript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    let intervalID;
+    const ganpatBaja = function () {
+      console.log("ashvalekh", Date.now());
+    };
+
+    intervalID = setInterval(ganpatBaja, 1000);
+
+    document.querySelector("#start").addEventListener("click", function () {
+      clearInterval(intervalID)
+      intervalID = setInterval(ganpatBaja, 1000);
+      console.log("Ganpat shuru hogya");
+    });
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(intervalID);
+      intervalID = null;
+      console.log("Ganpat rukgaya");
+    });
+  </script>
+</html>
