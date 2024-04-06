@@ -172,6 +172,7 @@ function newGame() {
 
 
 ## Project 5 Solution 
+
 ```javascript
 console.log('Project 5');
 const insert = document.getElementById('insert')
@@ -194,5 +195,43 @@ window.addEventListener('keydown', (e)=>{
     </div>
   `;
 })
+
+```
+
+## project 6 Solution
+```javascript
+let intervalId;
+const chnColor = function () {
+  const color = '0123456789ABCDEF';
+  let hex = '#';
+  for (let i = 0; i < 6; i++) {
+    hex += color[Math.floor(Math.random() * 16)];
+  }
+  return hex;
+};
+console.log(chnColor());
+
+intervalId = setInterval(function () {
+  const body = document.querySelector('body');
+  body.style.backgroundColor = chnColor();
+}, 1000);
+
+document.querySelector('#start').addEventListener('click', function () {
+  if (!intervalId) {
+    intervalId = setInterval(function () {
+      const body = document.querySelector('body');
+      body.style.backgroundColor = chnColor();
+      console.log('ganpat baja');
+    }, 1000);
+  }
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+  clearInterval(intervalId);
+  intervalId = null;
+  console.log('Ganpat rukgaya');
+});
+
+
 
 ```
